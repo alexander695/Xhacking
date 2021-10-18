@@ -23,7 +23,6 @@ def menu():
     print ("\t6 - python")
     print ("\t7 - python 2")
     print ("\t8 - WPS killer (web dumping)")
-    print ("\t9 - exit")
 
     while True:
 
@@ -85,10 +84,6 @@ def menu():
     
     if opcionMenu=="7":
         os.system("sudo dnf install python2")
-
-
-    elif opcionMenu=="9":
-                os.system("exit")
    
     else:
 
