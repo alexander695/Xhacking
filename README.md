@@ -2,7 +2,7 @@
 the hacking in 1 repository
 
 
-Install
+# Install
 
 pip install colorama 
 
