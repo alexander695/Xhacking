@@ -16,3 +16,7 @@ python3 Xhacking.py
 -More programs added
 
 -python and python2 added
+
+# UPDATE 1.3
+
+-Error fixed (program don't start)
