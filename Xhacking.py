@@ -16,7 +16,7 @@ def menu():
     print ("CODED BY KILLER")
 
     print ("opcions")
-    print ("\t1 - phishing(cheat website)")
+    print ("\t1 - phishing(cheat website)"                            "\t10 - Python3.9")
     print ("\t2 - sqlmap (vulnerability scan")
     print ("\t3 - Force Brute (facebook) ")
     print ("\t4 - nmap (port scanning)")
@@ -24,6 +24,8 @@ def menu():
     print ("\t6 - python")
     print ("\t7 - python 2")
     print ("\t8 - WPS killer (wifi dumping)")
+    print ("\t9 - IpLoger (Get Ip with fake website)")
+
 
 while True:
 
@@ -36,23 +38,20 @@ while True:
         os.system("git clone https://github.com/suljot/shellphish.git")
         os.system("cd shellphish")
         os.system("bash shellphish.sh")
-        input("\npress enter to back")
-        os.system("clear")
+        
     
  if opcionMenu=="2":
         print("Downloading...")
         os.system("git clone https://github.com/sqlmapproject/sqlmap")
         os.system("cd sqlmap")
         os.system("python sqlmap.py -h")
-        input("\npress enter to back")
-        os.system("clear")
+       
 
  if opcionMenu=="3": 
          print("Downloading...")
          os.system("git clone https://github.com/Gameye98/FBBrute")
          os.system(" python fbbrute.py")
-         input("\npress enter to back")
-         os.system("clear")
+       
 
  if opcionMenu=="4":
         print("Downloading...")
@@ -61,6 +60,7 @@ while True:
         os.system("./configure")
         os.system("make")
         os.system("make install")
+        print("intalled correctly")
         input("\npress enter to back")
         os.system("clear")
 
@@ -69,6 +69,7 @@ while True:
         os.system("git clone https://github.com/dadi32/PhoneSploit")
         os.system("cd PhoneSploit")
         os.system("python2 main.py")
+        
     
  if opcionMenu=="6":
         print("Downloading...")
@@ -76,8 +77,11 @@ while True:
         os.system("cd Python")
         os.system("./configure")
         os.system("make install")
+        print("intalled correctly")
+        input("\npress enter to back")
+        os.system("clear")
 
- if opcionMenu=="6":
+ if opcionMenu=="8":
         print("Downloading...")
         os.system("git clone https://github.com/FDX100/WPS-KILLER")
         os.system("cd WPS-KILLER")
@@ -85,6 +89,21 @@ while True:
     
  if opcionMenu=="7":
         os.system("sudo dnf install python2")
+        print("intalled correctly")
+        input("\npress enter to back")
+        os.system("clear")
+
+ if opcionMenu=="9":
+       os.system("git clone https://github.com/alexander695/IPloger")
+       os.system("cd IPloger")
+       os.system("python3.9 IP.py")
+ 
+ if opcionMenu=="10":
+        os.system("sudo apt install python3.9")
+        os.system("python3.9 --version")
+        print("intalled correctly")
+        input("\npress enter to back")
+        os.system("clear")
  else:
       print ("")
-      input("\ninvalid opcion press enter to back")
+      input("\na problem as ocurred press a key to restart")
