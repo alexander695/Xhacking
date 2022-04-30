@@ -3,13 +3,7 @@ the hacking in 1 repository
 
 
 # Install
-
-pip install colorama 
-
-run
-
-python3 Xhacking.py
-
+Only run install.py ;)
 
 # UPDATE 1.1.2
 
@@ -29,4 +23,7 @@ python3 Xhacking.py
 
 -program iplogger added
 
+# UPDATE 1.5
+-install file added
 
+-Easter eggs added Owo
