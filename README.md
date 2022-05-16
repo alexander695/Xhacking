@@ -31,4 +31,5 @@ Only run install.py ;)
 # UPDATE 1.6
 
 -bugs fixed
+
 Renember put git pull to update 
