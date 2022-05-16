@@ -28,7 +28,7 @@ Only run install.py ;)
 
 -Easter eggs added Owo
 
-#UPDATE 1.6
+# UPDATE 1.6
 
 -bugs fixed
 Renember put git pull to update 
