@@ -25,6 +25,10 @@ if python_install=="n":
 else:
    Retry = input("MmMmMmM that is not a opcion Y or N?:")
    
+   print("THAT IS NOT A OPCION, but only i will install python")
+   time.sleep(4)
+   os.system("sudo apt-get install python3.10.4")
+   
    if Retry=="N":
         print("Oh so the latest version of python will be installed")
         time.sleep(3)
@@ -42,14 +46,10 @@ else:
        print("Oh so the latest version of python will be installed")
        time.sleep(3)
        os.system("sudo apt-get install python3.10.4")
-   
-retry3 = print("THAT IS NOT A OPCION, but from i can see you are a suck so i will install python")(time.sleep(4))(os.system("sudo apt-get install python3.10.4"))
 
-    
-    
+
   
 os.system("pip install colorama")
-os.system("pip install time")
 
 print("Installation was completed sucefully ^^")
 
@@ -66,7 +66,7 @@ if Start=="N":
     time.sleep(2)
     os.system("exit")
 
-if Start=="n":
+if Start=="y":
     print("Ok! So if you like the proyect give a star ;)...")
     time.sleep(2)
     print("starting Xhacking...")
@@ -76,4 +76,6 @@ if Start=="n":
     print("Okay exiting!...\nGood bye! ^^")
     time.sleep(2)
     os.system("exit")
+
+
 
