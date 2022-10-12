@@ -1,35 +1,82 @@
 ## -*- coding: utf-8 -*-
+from secrets import choice
 import webbrowser
 import os
 import time
 from colorama import Fore
-#banner#
-def menu():
-    print (Fore.YELLOW +  '   ▄█    █▄       ▄████████  ▄████████    ▄█   ▄█▄  ▄█  ███▄▄▄▄      ▄███████▄')          
-    print (Fore.YELLOW + '  ███    ███     ███    ███ ███    ███   ███ ▄███▀ ███  ███▀▀▀██▄   ███    ███')                   
-    print (Fore.YELLOW + '  ███    ███     ███    ███ ███    █▀    ███▐██▀   ███▌ ███   ███   ███    █▀')            
-    print (Fore.YELLOW + ' ▄███▄▄▄▄███▄▄   ███    ███ ███         ▄█████▀    ███▌ ███   ███  ▄███      ')                      
-    print (Fore.YELLOW + '▀▀███▀▀▀▀███▀  ▀███████████ ███        ▀▀█████▄    ███▌ ███   ███ ▀▀███ ████▄')                
-    print (Fore.YELLOW + '  ███    ███     ███    ███ ███    █▄    ███▐██▄   ███  ███   ███   ███    ███')                                
-    print (Fore.YELLOW + '  ███    ███     ███    ███ ███    ███   ███ ▀███▄ ███  ███   ███   ███    ███')                    
-    print (Fore.YELLOW + '  ███    █▀      ███    █▀  ████████▀    ███   ▀█▀ █▀    ▀█   █▀    ████████▀') 
-    print ("CODED BY KILLER")
+import random
 
-    print ("opcions")
-    print ("\t1 - phishing(cheat website)"                            "\t10 - Python3.9")
-    print ("\t2 - sqlmap (vulnerability scan")
-    print ("\t3 - Force Brute (facebook) ")
-    print ("\t4 - nmap (port scanning)")
-    print ("\t5 - PhoneXploit(device hacking)")
-    print ("\t6 - python")
-    print ("\t7 - python 2")
-    print ("\t8 - WPS killer (wifi dumping)")
-    print ("\t9 - IpLoger (Get Ip with fake website)")
+#Prepar#
+print("Checking for requirements")
+requirement_read = open('/Main/requirement.py', "r")
+data = requirement_read.read()
+
+if data==False:
+        print("The requiments are not installed")
+        time.sleep(1)
+        print("installing...")
+        time.sleep(2)
+        os.system("sudo apt-get install python3.9")
+        os.system("sudo apt-get install python3-pip")
+        os.system("pip install colorama")
+        os.system("pip install random")
+        os.system("pip time")
+        requirement_read.write(True)
+
+if data==True:
+       print("Requirements already installed")
+       print("starting...")
+       time.sleep(2)
+
+#banners#
+banner1 = print (Fore.YELLOW +  """" ▄█    █▄       ▄████████  ▄████████    ▄█   ▄█▄  ▄█  ███▄▄▄▄      ▄███████▄          
+      ███    ███     ███    ███ ███    ███   ███ ▄███▀ ███  ███▀▀▀██▄   ███    ███                   
+      ███    ███     ███    ███ ███    █▀    ███▐██▀   ███▌ ███   ███   ███    █▀            
+     ▄███▄▄▄▄███▄▄   ███    ███ ███         ▄█████▀    ███▌ ███   ███  ▄███                            
+    ▀▀███▀▀▀▀███▀  ▀███████████ ███        ▀▀█████▄    ███▌ ███   ███ ▀▀███ ████▄                
+      ███    ███     ███    ███ ███    █▄    ███▐██▄   ███  ███   ███   ███    ███                                
+      ███    ███     ███    ███ ███    ███   ███ ▀███▄ ███  ███   ███   ███    ███                    
+      ███    █▀      ███    █▀  ████████▀    ███   ▀█▀ █▀    ▀█   █▀    ████████▀    
+      print ("coded by piloxe ^^")
+
+      print ("opcions")
+      print ("\t1 - phishing(cheat website)"                            "\t10 - Python3.9")
+      print ("\t2 - sqlmap (vulnerability scan")
+      print ("\t3 - Force Brute (facebook) ")
+      print ("\t4 - nmap (port scanning)")
+      print ("\t5 - PhoneXploit(device hacking)")
+      print ("\t6 - python")
+      print ("\t7 - python 2")
+      print ("\t8 - WPS killer (wifi dumping)")
+      print ("\t9 - IpLoger (Get Ip with fake website)""""")
+      
+
+    
+banner2 = print (Fore.LIGHTRED_EX + """""\ \/ / | | |  / \  / ___| |/ /_ _| \ | |/ ___|
+        \  /| |_| | / _ \| |   | ' / | ||  \| | |  _
+        /  \|  _  |/ ___ \ |___| . \ | || |\  | |_| |
+       /_/\_\_| |_/_/   \_\____|_|\_\___|_| \_|\____|
+       print ("coded by piloxe ^^")
+
+       print ("opcions")
+       print ("\t1 - phishing(cheat website)"                            "\t10 - Python3.9")
+       print ("\t2 - sqlmap (vulnerability scan")
+       print ("\t3 - Force Brute (facebook) ")
+       print ("\t4 - nmap (port scanning)")
+       print ("\t5 - PhoneXploit(device hacking)")
+       print ("\t6 - python")
+       print ("\t7 - python 2")
+       print ("\t8 - WPS killer (wifi dumping)")
+       print ("\t9 - IpLoger (Get Ip with fake website)""")
+
+def menu_main():
+    banners = [banner1, banner2]
+    return random.choice(banners)
 
 
 while True:
 
- menu()
+ menu_main()
 
  opcionMenu = input("select a opcion >>")
 
