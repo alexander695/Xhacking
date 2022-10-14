@@ -108,6 +108,9 @@ while True:
         os.system("make")
         os.system("make install")
         print("intalled correctly")
+        print("Usage:")
+        print("\nifconfig")
+        print("nmap -sP (Ip)/24")
         input("\npress enter to back")
         os.system("clear")
 
