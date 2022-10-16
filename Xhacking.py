@@ -40,15 +40,16 @@ banner1 = print (Fore.YELLOW +  """" ▄█    █▄       ▄█████�
       print ("coded by piloxe ^^")
 
       print ("opcions")
-      print ("\t1 - phishing(cheat website)"                            "\t10 - Python3.9")
-      print ("\t2 - sqlmap (vulnerability scan")
-      print ("\t3 - Force Brute (facebook) ")
+      print ("\t1 - phishing(cheat website)"                         "\t10 - Python3.9")
+      print ("\t2 - sqlmap (vulnerability scan)                      "\t11 - GOD-KILLER (Anon SMS and SMS spam)               ")
+      print ("\t3 - Force Brute (facebook)                           "\t12 - Aircrack-ng (Wifi hack)                          ")
       print ("\t4 - nmap (port scanning)")
       print ("\t5 - PhoneXploit(device hacking)")
       print ("\t6 - python")
       print ("\t7 - python 2")
       print ("\t8 - WPS killer (wifi dumping)")
-      print ("\t9 - IpLoger (Get Ip with fake website)""""")
+      print ("\t9 - IpLoger (Get Ip with fake website)                             """)
+
       
 
     
