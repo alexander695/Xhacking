@@ -8,7 +8,7 @@ import random
 
 #Prepar#
 print("Checking for requirements")
-requirement_read = open('/Main/requirement.py', "r")
+requirement_read = open('\Main/requirement.py', "r")
 data = requirement_read.read()
 
 if data==False:
