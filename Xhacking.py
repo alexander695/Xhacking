@@ -59,15 +59,15 @@ banner2 = print (Fore.LIGHTRED_EX + """""\ \/ / | | |  / \  / ___| |/ /_ _| \ | 
        print ("coded by piloxe ^^")
 
        print ("opcions")
-       print ("\t1 - phishing(cheat website)"                            "\t10 - Python3.9")
-       print ("\t2 - sqlmap (vulnerability scan")
-       print ("\t3 - Force Brute (facebook) ")
+       print ("\t1 - phishing(cheat website)"                         "\t10 - Python3.9")
+       print ("\t2 - sqlmap (vulnerability scan)                      "\t11 - GOD-KILLER (Anon SMS and SMS spam)               ")
+       print ("\t3 - Force Brute (facebook)                           "\t12 - Aircrack-ng (Wifi hack)                          ")
        print ("\t4 - nmap (port scanning)")
        print ("\t5 - PhoneXploit(device hacking)")
        print ("\t6 - python")
        print ("\t7 - python 2")
        print ("\t8 - WPS killer (wifi dumping)")
-       print ("\t9 - IpLoger (Get Ip with fake website)""")
+       print ("\t9 - IpLoger (Get Ip with fake website)                             """)
 
 def menu_main():
     banners = [banner1, banner2]
@@ -109,7 +109,7 @@ while True:
         os.system("make install")
         print("intalled correctly")
         print("Usage:")
-        print("\nifconfig")
+        print("\nifconfig to see your ip")
         print("nmap -sP (Ip)/24")
         input("\npress enter to back")
         os.system("clear")
@@ -154,6 +154,29 @@ while True:
         print("intalled correctly")
         input("\npress enter to back")
         os.system("clear")
+ 
+ if opcionMenu=="11":
+       os.system("git clone https://github.com/FDX100/GOD-KILLER.git")
+       os.system("cd GOD-KILLER")
+       os.system("python install.py")
+       os.system("clear")
+       os.system("GOD-KILLER")
+ 
+ if opcionMenu=="12":
+       os.system("wget https://download.aircrack-ng.org/aircrack-ng-1.7.tar.gz")
+       os.system("tar -zxvf aircrack-ng-1.7.tar.gz")
+       os.system("cd aircrack-ng-1.7")
+       os.system("autoreconf -i")
+       os.system("./configure --with-experimental")
+       os.system("make")
+       os.system("make install")
+       os.system("ldconfig")
+       print("installed correctly")
+       print("Tutorial: https://www.geeksforgeeks.org/kali-linux-hacking-wi-fi/")
+       print("Credits to @manav014")
+       input("\npress enter to back")
+       os.system("clear")
+
  else:
       print ("")
       input("\na problem as ocurred press a key to restart")
