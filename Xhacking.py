@@ -1,5 +1,4 @@
 ## -*- coding: utf-8 -*- ##
-from secrets import choice
 import webbrowser
 import os
 import time
@@ -7,30 +6,14 @@ from colorama import Fore
 import random
 
 #Prepar#
-print("Checking for requirements")
-requirement_read = open('Main/requirement.py', "r")
-data = requirement_read.read()
+print(Fore.LIGHTMAGENTA_EX + "Preparing...")
+time.sleep(3)
+os.system("sudo apt-get install python3.9")
+os.system("sudo apt-get install python3-pip")
+os.system("pip install colorama")
+os.system("pip install random")
+os.system("pip install time")
 os.system("clear")
-
-if data==False:
-        print("The requiments are not installed")
-        time.sleep(1)
-        print("installing...")
-        time.sleep(2)
-        os.system("sudo apt-get install python3.9")
-        os.system("sudo apt-get install python3-pip")
-        os.system("pip install colorama")
-        os.system("pip install random")
-        os.system("pip install time")
-        requirement_read.write(True)
-        os.system("clear")
-
-
-if data==True:
-       print("Requirements already installed")
-       print("starting...")
-       time.sleep(2)
-       os.system("clear")
 
 #banners#
 banner1 = (Fore.YELLOW +  """ ▄█    █▄       ▄████████  ▄████████    ▄█   ▄█▄  ▄█  ███▄▄▄▄      ▄███████▄          
