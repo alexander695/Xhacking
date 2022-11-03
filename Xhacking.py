@@ -1,4 +1,4 @@
-## -*- coding: utf-8 -*-
+## -*- coding: utf-8 -*- ##
 from secrets import choice
 import webbrowser
 import os
@@ -8,8 +8,9 @@ import random
 
 #Prepar#
 print("Checking for requirements")
-requirement_read = open('\Main/requirement.py', "r")
+requirement_read = open('Main/requirement.py', "r")
 data = requirement_read.read()
+os.system("clear")
 
 if data==False:
         print("The requiments are not installed")
@@ -20,55 +21,58 @@ if data==False:
         os.system("sudo apt-get install python3-pip")
         os.system("pip install colorama")
         os.system("pip install random")
-        os.system("pip time")
+        os.system("pip install time")
         requirement_read.write(True)
+        os.system("clear")
+
 
 if data==True:
        print("Requirements already installed")
        print("starting...")
        time.sleep(2)
+       os.system("clear")
 
 #banners#
-banner1 = print (Fore.YELLOW +  """" ▄█    █▄       ▄████████  ▄████████    ▄█   ▄█▄  ▄█  ███▄▄▄▄      ▄███████▄          
-      ███    ███     ███    ███ ███    ███   ███ ▄███▀ ███  ███▀▀▀██▄   ███    ███                   
-      ███    ███     ███    ███ ███    █▀    ███▐██▀   ███▌ ███   ███   ███    █▀            
-     ▄███▄▄▄▄███▄▄   ███    ███ ███         ▄█████▀    ███▌ ███   ███  ▄███                            
-    ▀▀███▀▀▀▀███▀  ▀███████████ ███        ▀▀█████▄    ███▌ ███   ███ ▀▀███ ████▄                
-      ███    ███     ███    ███ ███    █▄    ███▐██▄   ███  ███   ███   ███    ███                                
-      ███    ███     ███    ███ ███    ███   ███ ▀███▄ ███  ███   ███   ███    ███                    
-      ███    █▀      ███    █▀  ████████▀    ███   ▀█▀ █▀    ▀█   █▀    ████████▀    
-      print ("coded by piloxe ^^")
+banner1 = (Fore.YELLOW +  """ ▄█    █▄       ▄████████  ▄████████    ▄█   ▄█▄  ▄█  ███▄▄▄▄      ▄███████▄          
+ ███    ███     ███    ███ ███    ███   ███ ▄███▀ ███  ███▀▀▀██▄   ███    ███                   
+ ███    ███     ███    ███ ███    █▀    ███▐██▀   ███▌ ███   ███   ███    █▀            
+▄███▄▄▄▄███▄▄   ███    ███ ███         ▄█████▀    ███▌ ███   ███  ▄███                            
+▀▀███▀▀▀▀███▀  ▀███████████ ███        ▀▀█████▄    ███▌ ███   ███ ▀▀███ ████▄                
+  ███    ███     ███    ███ ███    █▄    ███▐██▄   ███  ███   ███   ███    ███                                
+  ███    ███     ███    ███ ███    ███   ███ ▀███▄ ███  ███   ███   ███    ███                    
+  ███    █▀      ███    █▀  ████████▀    ███   ▀█▀ █▀    ▀█   █▀    ████████▀    
+ coded by piloxe ^^
 
-      print ("opcions")
-      print ("\t1 - phishing(cheat website)"                         "\t10 - Python3.9")
-      print ("\t2 - sqlmap (vulnerability scan)                      "\t11 - GOD-KILLER (Anon SMS and SMS spam)               ")
-      print ("\t3 - Force Brute (facebook)                           "\t12 - Aircrack-ng (Wifi hack)                          ")
-      print ("\t4 - nmap (port scanning)")
-      print ("\t5 - PhoneXploit(device hacking)")
-      print ("\t6 - python")
-      print ("\t7 - python 2")
-      print ("\t8 - WPS killer (wifi dumping)")
-      print ("\t9 - IpLoger (Get Ip with fake website)                             """)
+      opcions
+      \t1 - phishing(cheat website)"                         \t10 - Python3.9
+      \t2 - sqlmap (vulnerability scan)                      \t11 - GOD-KILLER (Anon SMS and SMS spam)               
+      \t3 - Force Brute (facebook)                           \t12 - Aircrack-ng (Wifi hack)                          
+      \t4 - nmap (port scanning)")
+      \t5 - PhoneXploit(device hacking)")
+      \t6 - python")
+      \t7 - python 2")
+      \t8 - WPS killer (wifi dumping)")
+      \t9 - IpLoger (Get Ip with fake website)                             """)
 
       
 
     
-banner2 = print (Fore.LIGHTRED_EX + """""\ \/ / | | |  / \  / ___| |/ /_ _| \ | |/ ___|
-        \  /| |_| | / _ \| |   | ' / | ||  \| | |  _
-        /  \|  _  |/ ___ \ |___| . \ | || |\  | |_| |
-       /_/\_\_| |_/_/   \_\____|_|\_\___|_| \_|\____|
-       print ("coded by piloxe ^^")
+banner2 = (Fore.LIGHTRED_EX + """\ \/ / | | |  / \  / ___| |/ /_ _| \ | |/ ___|
+ \  /| |_| | / _ \| |   | ' / | ||  \| | |  _
+ /  \|  _  |/ ___ \ |___| . \ | || |\  | |_| |
+/_/\_\_| |_/_/   \_\____|_|\_\___|_| \_|\____|
+coded by piloxe ^^
 
-       print ("opcions")
-       print ("\t1 - phishing(cheat website)"                         "\t10 - Python3.9")
-       print ("\t2 - sqlmap (vulnerability scan)                      "\t11 - GOD-KILLER (Anon SMS and SMS spam)               ")
-       print ("\t3 - Force Brute (facebook)                           "\t12 - Aircrack-ng (Wifi hack)                          ")
-       print ("\t4 - nmap (port scanning)")
-       print ("\t5 - PhoneXploit(device hacking)")
-       print ("\t6 - python")
-       print ("\t7 - python 2")
-       print ("\t8 - WPS killer (wifi dumping)")
-       print ("\t9 - IpLoger (Get Ip with fake website)                             """)
+  opcions
+  \t1 - phishing(cheat website)                          \t10 - Python3.9
+  \t2 - sqlmap (vulnerability scan)                      \t11 - GOD-KILLER (Anon SMS and SMS spam)               
+  \t3 - Force Brute (facebook)                           \t12 - Aircrack-ng (Wifi hack)                          
+  \t4 - nmap (port scanning)
+  \t5 - PhoneXploit(device hacking)
+  \t6 - python
+  \t7 - python 2
+  \t8 - WPS killer (wifi dumping)
+  \t9 - IpLoger (Get Ip with fake website)                             """)
 
 def menu_main():
     banners = [banner1, banner2]
@@ -76,13 +80,13 @@ def menu_main():
 
 
 while True:
-
- menu_main()
+ 
+ print(menu_main())
 
  opcionMenu = input("select a opcion >>")
 
  if opcionMenu=="1":
-        print ("Downloading...")
+        print("Downloading...")
         os.system("git clone https://github.com/suljot/shellphish.git")
         os.system("cd shellphish")
         os.system("bash shellphish.sh")
@@ -179,5 +183,5 @@ while True:
        os.system("clear")
 
  else:
-      print ("")
       input("\na problem as ocurred press a key to restart")
+      os.system("clear")
