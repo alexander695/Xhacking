@@ -1,9 +1,10 @@
 ## -*- coding: utf-8 -*- ##
-import webbrowser
 import os
-import time
-from colorama import Fore
 import random
+import time
+import webbrowser
+
+from colorama import Fore
 
 #Prepar#
 print(Fore.LIGHTMAGENTA_EX + "Preparing...")
@@ -35,7 +36,7 @@ banner1 = (Fore.YELLOW +  """ ▄█    █▄       ▄████████
       \t6 - python")
       \t7 - python 2")
       \t8 - WPS killer (wifi dumping)")
-      \t9 - IpLoger (Get Ip with fake website)                             """)
+      \t9 - IpLoger (Get Ip with fake website)               \t0 - Update              """)
 
       
 
@@ -55,7 +56,7 @@ coded by piloxe ^^
   \t6 - python
   \t7 - python 2
   \t8 - WPS killer (wifi dumping)
-  \t9 - IpLoger (Get Ip with fake website)                             """)
+  \t9 - IpLoger (Get Ip with fake website)               \t0 - Update              """)
 
 def menu_main():
     banners = [banner1, banner2]
@@ -75,20 +76,20 @@ while True:
         os.system("bash shellphish.sh")
         
     
- if opcionMenu=="2":
+ elif opcionMenu=="2":
         print("Downloading...")
         os.system("git clone https://github.com/sqlmapproject/sqlmap")
         os.system("cd sqlmap")
         os.system("python sqlmap.py -h")
        
 
- if opcionMenu=="3": 
+ elif opcionMenu=="3": 
          print("Downloading...")
          os.system("git clone https://github.com/Gameye98/FBBrute")
          os.system(" python fbbrute.py")
        
 
- if opcionMenu=="4":
+ elif opcionMenu=="4":
         print("Downloading...")
         os.system("git clone https://github.com/nmap/nmap")
         os.system("cd nmap")
@@ -102,14 +103,14 @@ while True:
         input("\npress enter to back")
         os.system("clear")
 
- if opcionMenu=="5":
+ elif opcionMenu=="5":
         print("Downloading...")
         os.system("git clone https://github.com/dadi32/PhoneSploit")
         os.system("cd PhoneSploit")
         os.system("python2 main.py")
         
     
- if opcionMenu=="6":
+ elif opcionMenu=="6":
         print("Downloading...")
         os.system("git clone https://github.com/TheAlgorithms/Python")
         os.system("cd Python")
@@ -119,38 +120,38 @@ while True:
         input("\npress enter to back")
         os.system("clear")
 
- if opcionMenu=="8":
+ elif opcionMenu=="8":
         print("Downloading...")
         os.system("git clone https://github.com/FDX100/WPS-KILLER")
         os.system("cd WPS-KILLER")
         os.system("python WPS-KILLER.py")
     
- if opcionMenu=="7":
+ elif opcionMenu=="7":
         os.system("sudo dnf install python2")
         print("intalled correctly")
         input("\npress enter to back")
         os.system("clear")
 
- if opcionMenu=="9":
+ elif opcionMenu=="9":
        os.system("git clone https://github.com/alexander695/IPloger")
        os.system("cd IPloger")
        os.system("python3.9 IP.py")
  
- if opcionMenu=="10":
+ elif opcionMenu=="10":
         os.system("sudo apt install python3.9")
         os.system("python3.9 --version")
         print("intalled correctly")
         input("\npress enter to back")
         os.system("clear")
  
- if opcionMenu=="11":
+ elif opcionMenu=="11":
        os.system("git clone https://github.com/FDX100/GOD-KILLER.git")
        os.system("cd GOD-KILLER")
        os.system("python install.py")
        os.system("clear")
        os.system("GOD-KILLER")
  
- if opcionMenu=="12":
+ elif opcionMenu=="12":
        os.system("wget https://download.aircrack-ng.org/aircrack-ng-1.7.tar.gz")
        os.system("tar -zxvf aircrack-ng-1.7.tar.gz")
        os.system("cd aircrack-ng-1.7")
@@ -164,7 +165,16 @@ while True:
        print("Credits to @manav014")
        input("\npress enter to back")
        os.system("clear")
+ 
+ elif opcionMenu=="0":
+       print("You need to be connected to internet")
+       input("Enter to proceed")
+       os.system("git pull")
+       time.sleep(2)
+       os.system("clear")
+       menu_main()
+       
 
- else:
-      input("\na problem as ocurred press a key to restart")
-      os.system("clear")
+else:
+        input("\na problem as ocurred press a key to restart")
+        os.system("clear")
