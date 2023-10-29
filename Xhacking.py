@@ -2,24 +2,38 @@
 import os
 import random
 import time
-import webbrowser
 
-from colorama import Fore
+class bcolors:
+    HEADER = "\033[95m"
+    OKBLUE = "\033[94m"
+    OKCYAN = "\033[96m"
+    OKGREEN = "\033[92m"
+    WARNING = "\033[93m"
+    FAIL = "\033[91m"
+    END = "\033[0m"
+    BOLD = "\033[1m"
+    UND = "\033[4m"
 
 #Prepar#
-print(Fore.LIGHTMAGENTA_EX + "Preparing...")
-time.sleep(3)
-os.system("sudo apt-get install python3.9")
-os.system("sudo apt-get install python3-pip")
-os.system("pip install colorama")
-os.system("pip install random")
-os.system("pip install time")
-os.system("clear")
+def install():
+       print(f"{bcolors.WARNING}Preparing...{bcolors.END}")
+       time.sleep(3)
+       os.system("sudo apt-get install python3.9")
+       os.system("sudo apt-get install python3-pip")
+       os.system("pip install colorama")
+       os.system("pip install random")
+       os.system("pip install time")
+       os.system("clear")
 
+with open("bin1.txt", "wb") as bin:
+      if bin == "0":
+            install()
+      else:
+            pass
 ip = os.popen("hostname -I").read()
 
 #banners#
-banner1 = (Fore.YELLOW +  """ \n▄█    █▄       ▄████████  ▄████████    ▄█   ▄█▄  ▄█  ███▄▄▄▄      ▄███████▄          
+banner1 = (f"""{bcolors.HEADER}{bcolors.BOLD} \n▄█    █▄       ▄████████  ▄████████    ▄█   ▄█▄  ▄█  ███▄▄▄▄      ▄███████▄          
  ███    ███     ███    ███ ███    ███   ███ ▄███▀ ███  ███▀▀▀██▄   ███    ███                   
  ███    ███     ███    ███ ███    █▀    ███▐██▀   ███▌ ███   ███   ███    █▀            
 ▄███▄▄▄▄███▄▄   ███    ███ ███         ▄█████▀    ███▌ ███   ███  ▄███                            
@@ -27,47 +41,30 @@ banner1 = (Fore.YELLOW +  """ \n▄█    █▄       ▄███████�
   ███    ███     ███    ███ ███    █▄    ███▐██▄   ███  ███   ███   ███    ███                                
   ███    ███     ███    ███ ███    ███   ███ ▀███▄ ███  ███   ███   ███    ███                    
   ███    █▀      ███    █▀  ████████▀    ███   ▀█▀ █▀    ▀█   █▀    ████████▀    
- coded by piloxe ^^
-
-      opcions
-      \t1 - phishing(cheat website)                        \t10 - Python3.9
-      \t2 - sqlmap (vulnerability scan)                      \t11 - GOD-KILLER (Anon SMS and SMS spam)               
-      \t3 - Force Brute (facebook)                           \t12 - Aircrack-ng (Wifi hack)                          
-      \t4 - nmap (port scanning)
-      \t5 - PhoneXploit(device hacking)
-      \t6 - python
-      \t7 - python 2
-      \t8 - WPS killer (wifi dumping)
-      \t9 - IpLoger (Get Ip with fake website)               \t0 - Update              """)
-
-      
-
-    
-banner2 = (Fore.LIGHTRED_EX + """\n\ \/ / | | |  / \  / ___| |/ /_ _| \ | |/ ___|
-\  /| |_| | / _ \| |   | ' / | ||  \| | |  _
-/  \|  _  |/ ___ \ |___| . \ | || |\  | |_| |
+ coded by piloxe ^^{bcolors.END}""")
+   
+banner2 = (f"""{bcolors.HEADER}{bcolors.BOLD}\n\ \/ / | | |  / \  / ___| |/ /_ _| \ | |/ ___|
+ \  /| |_| | / _ \| |   | ' / | ||  \| | |  _
+ /  \|  _  |/ ___ \ |___| . \ | || |\  | |_| |
 /_/\_\_| |_/_/   \_\____|_|\_\___|_| \_|\____|
-coded by piloxe ^^
+coded by piloxe ^^{bcolors.END}""")
 
-  opcions
-  \t1 - phishing(cheat website)                          \t10 - Python3.9
-  \t2 - sqlmap (vulnerability scan)                      \t11 - GOD-KILLER (Anon SMS and SMS spam)               
-  \t3 - Force Brute (facebook)                           \t12 - Aircrack-ng (Wifi hack)                          
-  \t4 - nmap (port scanning)
-  \t5 - PhoneXploit(device hacking)
-  \t6 - python
-  \t7 - python 2
-  \t8 - WPS killer (wifi dumping)
-  \t9 - IpLoger (Get Ip with fake website)               \t0 - Update              """)
-
-def menu_main():
-    banners = [banner1, banner2]
-    return random.choice(banners)
-
+panel = (f"""{bcolors.OKGREEN}\n
+\t{bcolors.UND}1{bcolors.END}{bcolors.OKGREEN} - phishing(cheat website)                          \t{bcolors.UND}10{bcolors.END}{bcolors.OKGREEN} - Python3.9 (for almost everything)
+\t{bcolors.UND}2{bcolors.END}{bcolors.OKGREEN} - sqlmap (vulnerability scan)                      \t{bcolors.UND}11{bcolors.END}{bcolors.OKGREEN} - GOD-KILLER (Anon SMS and SMS spam)               
+\t{bcolors.UND}3{bcolors.END}{bcolors.OKGREEN} - Force Brute (facebook)                           \t{bcolors.UND}12{bcolors.END}{bcolors.OKGREEN} - Aircrack-ng (Wifi hack)                          
+\t{bcolors.UND}4{bcolors.END}{bcolors.OKGREEN} - nmap (port scanning)
+\t{bcolors.UND}5{bcolors.END}{bcolors.OKGREEN} - PhoneXploit(device hacking)
+\t{bcolors.UND}6{bcolors.END}{bcolors.OKGREEN} - python
+\t{bcolors.UND}7{bcolors.END}{bcolors.OKGREEN} - python2 (Needed for PhoneXploit)
+\t{bcolors.UND}8{bcolors.END}{bcolors.OKGREEN} - WPS killer (wifi dumping)
+\t{bcolors.UND}9{bcolors.END}{bcolors.OKGREEN} - IpLoger (Get Ip with fake website)               \t0 - Update{bcolors.END}{bcolors.WARNING}{bcolors.BOLD}    THE FILES YOU  DOWNLOAD WILL BE STORED IN LOCAL PATH /Xhacking{bcolors.END}""") 
 
 while True:
- 
- print(menu_main())
+ banners = [banner1, banner2]
+ b = random.choice(banners)
+
+ print(b + panel)
 
  opcionMenu = input("select a opcion >>")
 
@@ -82,18 +79,14 @@ while True:
  elif opcionMenu=="2":
         print("Downloading...")
         os.system("git clone https://github.com/sqlmapproject/sqlmap")
-        os.system("cd sqlmap")
         os.system("clear")
-        os.system("python sqlmap.py -h")
+        os.system("python /sqlmap/sqlmap.py -h")
         
-       
-
  elif opcionMenu=="3": 
          print("Downloading...")
          os.system("git clone https://github.com/Gameye98/FBBrute")
-         os.system("cd FBBrute")
          os.system("clear")
-         os.system("python fbbrute.py")
+         os.system("python /FBBrute/fbbrute.py")
        
  elif opcionMenu=="4":
         print("Downloading...")
@@ -102,7 +95,7 @@ while True:
         os.system("./configure")
         os.system("make")
         os.system("make install")
-        print("intalled correctly")
+        print(f"\n{bcolors.BOLD}{bcolors.OKGREEN}intalled correctly{bcolors.END}")
         print("Usage:")
         print("nmap -sP"+ ip + "/24")
         input("\npress enter to back")
@@ -111,18 +104,15 @@ while True:
  elif opcionMenu=="5":
         print("Downloading...")
         os.system("git clone https://github.com/dadi32/PhoneSploit")
-        os.system("cd PhoneSploit")
+        os.system("python2 -m pip install Colorama")
         os.system("clear")
-        os.system("python2 main.py")
+        os.system("python2 /PhoneSploit/main.py")
         
-    
  elif opcionMenu=="6":
         print("Downloading...")
         os.system("git clone https://github.com/TheAlgorithms/Python")
-        os.system("cd Python")
-        os.system("./configure")
-        os.system("make install")
-        print("intalled correctly")
+        print("Algorithms of python")
+        print(f"\n{bcolors.BOLD}{bcolors.OKGREEN}Downloaded correctly{bcolors.END}")
         input("\npress enter to back")
         os.system("clear")
 
@@ -135,7 +125,7 @@ while True:
     
  elif opcionMenu=="7":
         os.system("sudo dnf install python2")
-        print("intalled correctly")
+        print(f"\n{bcolors.BOLD}{bcolors.OKGREEN}intalled correctly{bcolors.END}")
         input("\npress enter to back")
         os.system("clear")
 
@@ -148,7 +138,7 @@ while True:
  elif opcionMenu=="10":
         os.system("sudo apt install python3.9")
         os.system("python3.9 --version")
-        print("intalled correctly")
+        print(f"\n{bcolors.BOLD}{bcolors.OKGREEN}intalled correctly{bcolors.END}")
         input("\npress enter to back")
         os.system("clear")
  
@@ -180,9 +170,6 @@ while True:
        os.system("git pull")
        time.sleep(2)
        os.system("clear")
-       menu_main()
-       
-
-else:
-        input("\na problem as ocurred press a key to restart")
+ else:
+        input("\na problem as ocurred. Intenet conection?")
         os.system("clear")
